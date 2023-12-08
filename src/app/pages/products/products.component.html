@@ -1,0 +1,25 @@
+<section>
+    <div class="products">
+        <div class="product-header">
+            Product Category
+        </div>
+        <div class="product-header-text">
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        </div>
+        <div class="card-section">
+            <div class="cards container">
+                @for (products of productsCategories; track products.items) {     
+                    <div class="card">
+                        <img src="../../../assets/images/coffie.png" alt="">
+                        <div class="title">
+                            {{products.type}}
+                        </div>
+                        <span class="items">
+                            {{products.items}}
+                        </span>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

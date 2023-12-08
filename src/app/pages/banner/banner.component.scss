@@ -1,0 +1,77 @@
+.banner {
+    background-color: #E0E0E0;
+
+    .carousel {
+        display: grid;
+        place-items: center;
+
+        .slider-container {
+            width: 1670px;
+            position: relative;
+            padding: 50px;
+        }
+
+        .slider {
+            border: 1px solid black;
+            width: 100%;
+            height: 350px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .slide {
+            width: 100%;
+            max-width: 800px;
+            height: 350px;
+            position: absolute;
+            transition: all 0.5s;
+        }
+
+        .slide img {
+            width: 1670px;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+
+    .btn-actions {
+        width: 100%;
+        display: flex;
+        z-index: 100;
+        justify-content: space-between;
+        position: absolute;
+
+        .btn {
+            padding: 18px;
+            border-radius: 50%;
+            border: 0 transparent;
+        }
+    }
+
+
+    .banner-options {
+        display: flex;
+        justify-content: space-between;
+        width: 1356px;
+        margin: 0 auto;
+
+        a {
+            display: flex;
+            align-items: center;
+            border: 1.45px solid var(--primary-color);
+            border-radius: 14.5px;
+            padding: 25px 70px;
+            color: var(--primary-color);
+            font-size: 25.31px;
+            line-height: 13.01px;
+            font-weight: 600;
+
+            img {
+                padding-right: 29px;
+            }
+        }
+    }
+}
